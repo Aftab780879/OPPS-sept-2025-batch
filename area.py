@@ -24,9 +24,21 @@ class Rectangle(Shapes):
         area= self.l*self.b
         print(f"Area of rectangle= {area}")
 
+class Square(Shapes): 
+    def __init__(self,side):
+        self.side=side
+        
+
+    def area(self):
+        area= self.side*self.side
+        print(f"Area of Square= {area}")        
+
 
 circle=Circle(9)
 circle.area()
 
 rectangle=Rectangle(4,9)
 rectangle.area()
+
+square=Square(9)
+square.area()
